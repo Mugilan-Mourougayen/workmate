@@ -1,0 +1,97 @@
+.App {
+    text-align: center;
+  }
+  
+  .hero {
+    height:50px ;
+    line-height: 50px;
+    background-color: white;
+    position: sticky;
+    top:0;
+    
+  }
+
+  .slide {
+    height: 100vh;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(177,177,177,1) 100%);
+border-bottom: solid; 
+
+}
+  
+  .link {
+    text-decoration: none;
+    display: inline;
+    padding: 20px 20px;
+    font-weight: 700;
+    font-size: large;
+    cursor: pointer;
+  }
+ 
+
+
+
+
+  
+  /* scroll to top button */
+  .top-btn-position {
+    position: fixed;
+    
+    bottom: 15px;
+    right: 20px;
+  }
+  
+  .top-btn-style {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .top-btn-style:hover {
+    animation: none;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+ 
+  .image{
+    border-radius: 8px;
+    max-width: 60%;
+    height: auto;
+  
+  }
+
+  #container{
+    display:flex;
+    align-content:space-between
+  }
+  .leftflex{
+margin: auto;
+padding: auto;
+max-width: 50%;
+height: auto;
+  }
+
+  .rightflex{
+    margin: auto;
+  
+      }
+      .main {
+        height: 100vh;
+        position: relative;
+        z-index: -2;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(177,177,177,1) 100%);
+        border-bottom: solid;      
+    }
+      .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      } 
