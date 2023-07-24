@@ -88,7 +88,23 @@ console.log(id)
 
 })
 
-  
+
+
+
+router.get('/getonejob/:_id', async(req, res) => {
+  const id = req.params._id;
+console.log(id)
+  const joblist = await Job.findOne({_id:id})
+  if(joblist){
+
+    res.json(joblist)
+  }else{
+    res.status(400).json({ error: "Bad Request" });
+  }
+
+})
+
+
   module.exports = router;
 
 
